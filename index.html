@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Graph</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="jscript/jquery_lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="jscript/graph.js"></script>
+	</head>
+	<body>
+		<div class="graph">
+			<div class="line"><div class="range-val"></div></div>
+			<div class="line"><div class="range-val"></div></div>
+			<div class="line"><div class="range-val"></div></div>
+			<div class="line"><div class="range-val"></div></div>
+			<div class="line"><div class="range-val"></div></div>
+			<div class="line"><div class="range-val bottom">0</div></div>
+			<ul class="points">
+				<li><div class="point-1"></div><div class="gorizontal-line"></div></li>
+				<li><div class="point-2"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-3"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-4"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-5"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-6"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-7"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-8"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
+				<li><div class="point-9"></div><div class="vertical-line"></div></li>
+			</ul>
+		</div>
+		
+	<!-- 	<form>
+			<div class="wrap-input">
+				<label for="range">Range</label>
+				<input id="range" min="5" type="number" value="40" />
+			</div>
+			<div class="wrap-input">
+				<label for="point_1">Point 1</label>
+				<input id="point_1" type="number" value="0" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_2">Point 2</label>
+				<input id="point_2" type="number" value="17" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_3">Point 3</label>
+				<input id="point_3" type="number" value="0" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_4">Point 4</label>
+				<input id="point_4" type="number" value="20" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_5">Point 5</label>
+				<input id="point_5" type="number" value="10" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_6">Point 6</label>
+				<input id="point_6" type="number" value="30" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_7">Point 7</label>
+				<input id="point_7" type="number" value="20" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_8">Point 8</label>
+				<input id="point_8" type="number" value="10" class="point-input"/>
+			</div>
+			<div class="wrap-input">
+				<label for="point_9">Point 9</label>
+				<input id="point_9" type="number" value="10" class="point-input"/>
+			</div>
+		</form> -->
+		<div class="container">
+			<div class="left-panel">
+				<table class="factors">
+					<thead>
+						<tr>
+							<td>Weight (%)</td>
+							<td><span class="icon"></span></td>
+							<td>Factors (Click for Detailed View)</td>
+							<td>Score</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Economy</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Financial Management</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Budgetary Flexibility</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Budgetary Performance</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Liquidity</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Debt Burden</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Contingent Liabilities</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Factor Score Weighted Average</span></td>
+							<td><input type="number" value='3'></td>
+						</tr>
+						<tr>
+							<td><input type="text"></td>
+							<td><span class="icon"></span></td>
+							<td><span>Overrides</span></td>
+							<td><input type="text" value='a'></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="right-panel"></div>
+		</div>
+	</body>
+</html>

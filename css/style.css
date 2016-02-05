@@ -1,0 +1,115 @@
+* {vertical-align: baseline;font-weight: normal;margin: 0;padding: 0;}
+
+body {margin: 0;padding: 0;font-family: 'Arial';font-size: 14px;width: 100%; margin: 10px;}
+
+.graph {
+	position: relative;
+	padding: 30px;
+	border: 1px solid #000000;
+	width: 50%;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background: #ebebeb;
+	margin-bottom: 40px;
+}
+
+.line .range-val {
+	color: #666666;
+	margin-left: -25px;
+	position: relative;
+	top: -8px;
+}
+
+.points {
+	margin-top: -45px;
+	position: relative;
+	
+}
+
+.points  li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+.points  li div:first-child{
+	width: 10px;
+	height: 10px;
+	background: #ee2930;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float: left;
+	margin-right: 40px;
+	position: relative;
+	z-index: 2;
+}
+
+.gorizontal-line {
+	height: 5px;
+	background: #777777;
+	position: relative;
+	top: 2px;
+	left: 8px;
+}
+
+.vertical-line {
+	display: none;
+	width: 5px;
+	background: #777777;
+	position: absolute;
+	top: 2px;
+	left: 3px;
+}
+
+.reverse-line .vertical-line {
+	bottom: 5px;
+	top: auto;
+}
+
+.wrap-input {
+	margin-bottom: 15px;
+}
+
+.wrap-input label {
+	margin-right: 15px
+}
+
+.wrap-input input {
+	width: 50px;
+	height: 25px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 1px solid #888888;
+	padding-left: 5px;
+}
+
+.left-panel {
+	float: left;
+	width: 50%;
+}
+
+.factors {
+	border-collapse: collapse;
+}
+
+.factors tbody td:nth-child(3) span{
+	display: block;
+	background: #6a87ad;
+	padding:7px 14px;
+	color: #fff;
+	font-size: 14px;
+	font-family: arial black;
+	cursor: pointer;
+}
+
+.factors tbody td {
+	padding: 14px 0;
+}
