@@ -100,14 +100,52 @@ body {margin: 0;padding: 0;font-family: 'Arial';font-size: 14px;width: 100%; mar
 	border-collapse: collapse;
 }
 
+.factors thead {
+	color: #999;
+	font-size: 12px;
+}
+
+.factors tbody td:first-child input{
+	border: 2px solid #b3b3b3;
+	width: 56px;
+	height: 26px;
+	height: 25px;
+	text-align: center;
+}
+
 .factors tbody td:nth-child(3) span{
 	display: block;
 	background: #6a87ad;
-	padding:7px 14px;
+	padding:7px 25px 7px 14px;
 	color: #fff;
 	font-size: 14px;
 	font-family: arial black;
 	cursor: pointer;
+	position: relative;
+}
+
+.factors tbody td:nth-child(3) span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 8px;
+	height: 13px;
+	background: url('../image/sprite.png') 0 0;
+}
+
+.factors tbody td:last-child input{
+	height: 25px;
+	line-height: 25px;
+	background: #b3b3b3;
+	font-size: 18px;
+	font-family: arial black;
+	width: 70px;
+	border: none;
+	text-align: center;
+	color: #fff;
+	margin-left: 15px;
 }
 
 .factors tbody td {
