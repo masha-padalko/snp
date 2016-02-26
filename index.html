@@ -4,8 +4,8 @@
 	<head>
 		<title>Graph</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script type="text/javascript" src="jscript/jquery_lib/jquery-1.11.3.js"></script>
 		<script type="text/javascript" src="jscript/jquery_lib/bootstrap-slider.js"></script>
 		<script type="text/javascript" src="jscript/graph.js"></script>
@@ -16,8 +16,7 @@
 			<div class="line"><div class="range-val"></div></div>
 			<div class="line"><div class="range-val"></div></div>
 			<div class="line"><div class="range-val"></div></div>
-			<div class="line"><div class="range-val"></div></div>
-			<div class="line"><div class="range-val bottom">0</div></div>
+			<div class="line"><div class="range-val bottom"></div></div>
 			<ul class="points">
 				<li><div class="point-1"></div><div class="gorizontal-line"></div></li>
 				<li><div class="point-2"></div><div class="gorizontal-line"></div><div class="vertical-line"></div></li>
@@ -30,51 +29,13 @@
 				<li><div class="point-9"></div><div class="vertical-line"></div></li>
 			</ul>
 		</div>
-		
-	<!-- 	<form>
-			<div class="wrap-input">
-				<label for="range">Range</label>
-				<input id="range" min="5" type="number" value="40" />
-			</div>
-			<div class="wrap-input">
-				<label for="point_1">Point 1</label>
-				<input id="point_1" type="number" value="0" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_2">Point 2</label>
-				<input id="point_2" type="number" value="17" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_3">Point 3</label>
-				<input id="point_3" type="number" value="0" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_4">Point 4</label>
-				<input id="point_4" type="number" value="20" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_5">Point 5</label>
-				<input id="point_5" type="number" value="10" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_6">Point 6</label>
-				<input id="point_6" type="number" value="30" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_7">Point 7</label>
-				<input id="point_7" type="number" value="20" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_8">Point 8</label>
-				<input id="point_8" type="number" value="10" class="point-input"/>
-			</div>
-			<div class="wrap-input">
-				<label for="point_9">Point 9</label>
-				<input id="point_9" type="number" value="10" class="point-input"/>
-			</div>
-		</form> -->
+
 		<div class="container">
 			<div class="left-panel">
+				<div>
+					<span class="institutional-framework">Institutional Framework</span>
+					<span class="ifa">Extremely predictable and supportive</span>
+				</div>
 				<table class="factors">
 					<thead>
 						<tr>
@@ -88,63 +49,155 @@
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Economy</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="economy"></td>
+							<td><span class="factor-name">Economy</span></td>
+							<td><div class="input-score economy" data-factor="economy">3</div></td>
+							<td>
+									<div class="dialog" data-dialog='economy'>
+								<div class="arrow-back">
+									
+								</div>
+								<div class="title">Adjust the Score:<span>Economy</span></div>
+								<div id="tabs-container" class="wrap-qualitative-factors">
+								    <ul class="tabs-menu">
+								        <li class="current"><a href="#tab-1">GDP per capita (nominal US)</a></li>
+								        <li><a href="#tab-2">Qualitative Factors</a></li>
+								    </ul>
+								    <div class="tab">
+								        <div id="tab-1" class="tab-content">
+								           <table class="economy-table">
+									           	<tr>
+									           		<td><span>> 38,000$</span></td>
+									           		<td><span>27,001 to 38,000$</span></td>
+									           		<td><span>16,001 to 27,000$</span></td>
+									           		<td><span>5,500 to 16,000$</span></td>
+									           		<td><span>&#60; 5,500$</span></td>
+									           	</tr>
+									           	<tr>
+									           		<td>1</td>
+									           		<td>2</td>
+									           		<td>3</td>
+									           		<td>4</td>
+									           		<td>5</td>
+									           	</tr>
+								           </table>
+								        </div>
+								        <div id="tab-2" class="tab-content">
+								        	<div class="left">
+								        		<span>Positive Impact</span>
+									        	<div class="wrap-qualitative-factors-item eca1">
+										           <p>Participation in a larger broad and diversified economy.</p>
+										           <label><input type='radio' name="1" checked="checked">Not likely</label>
+										           <label><input type='radio' name="1">Somewhat likely</label>
+										           <label><input type='radio' name="1">Very likely</label>
+									        	</div>
+									        	<div class="wrap-qualitative-factors-item eca2">
+										           <p>Above-average growth prospects: natural endowments, location, proximity to key markets, employment opportunities.</p>
+										           <label><input type='radio' name="2" checked="checked">Not likely</label>
+										           <label><input type='radio' name="2">Somewhat likely</label>
+										           <label><input type='radio' name="2">Very likely</label>
+									        	</div>
+									        	<div class="wrap-qualitative-factors-item eca3">
+										           <p>Positive budget impact from a socioeconomic and demographic profile.</p>
+										           <label><input type='radio' name="3" checked="checked">Not likely</label>
+										           <label><input type='radio' name="3">Somewhat likely</label>
+										           <label><input type='radio' name="3">Very likely</label>
+									        	</div>
+
+								        	</div>
+								        	<div class="right">
+								        		<span>Negative Impact</span>
+									        	<div class="wrap-qualitative-factors-item eca4">
+										           <p>Participation in a larger broad and diversified economy.</p>
+										           <label><input type='radio' name="4" checked="checked">Not likely</label>
+										           <label><input type='radio' name="4">Somewhat likely</label>
+										           <label><input type='radio' name="4">Very likely</label>
+									        	</div>
+									        	<div class="wrap-qualitative-factors-item eca5">
+										           <p>Above-average growth prospects: natural endowments, location, proximity to key markets, employment opportunities.</p>
+										           <label><input type='radio' name="5" checked="checked">Not likely</label>
+										           <label><input type='radio' name="5">Somewhat likely</label>
+										           <label><input type='radio' name="5">Very likely</label>
+									        	</div>
+									        	<div class="wrap-qualitative-factors-item eca6">
+										           <p>Positive budget impact from a socioeconomic and demographic profile.</p>
+										           <label><input type='radio' name="6" checked="checked">Not likely</label>
+										           <label><input type='radio' name="6">Somewhat likely</label>
+										           <label><input type='radio' name="6">Very likely</label>
+									        	</div>
+
+								        	</div>
+								        </div>
+								    </div>
+								    <div class="total">0</div>
+								</div>
+							</div>
+							</td>	
 						</tr>
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Financial Management</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="finman"></td>
+							<td><span class="factor-name">Financial Management</span></td>
+							<td><div class="input-score finman" data-factor="finman">3</div></td>
 						</tr>
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Budgetary Flexibility</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="budflex"></td>
+							<td><span class="factor-name">Budgetary Flexibility</span></td>
+							<td><div class="input-score budflex" data-factor="budflex">3</div></td>
 						</tr>
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Budgetary Performance</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="budper"></td>
+							<td><span class="factor-name">Budgetary Performance</span></td>
+							<td><div class="input-score budper" data-factor="budper">3</div></td>
 						</tr>
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Liquidity</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="liq"></td>
+							<td><span class="factor-name">Liquidity</span></td>
+							<td><div class="input-score liq" data-factor="liq">3</div></td>
 						</tr>
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Debt Burden</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="debt"></td>
+							<td><span class="factor-name">Debt Burden</span></td>
+							<td><div class="input-score debt" data-factor="debt">3</div></td>
 						</tr>
 						<tr>
 							<td><input type="text"></td>
 							<td><span class="icon"></span></td>
-							<td><span>Contingent Liabilities</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="conlib"></td>
+							<td><span class="factor-name">Contingent Liabilities</span></td>
+							<td><div class="input-score conlib" data-factor="conlib">3</div></td>
 						</tr>
 						<tr>
 							<td></td>
 							<td><span class="icon"></span></td>
-							<td><span>Factor Score Weighted Average</span></td>
-							<td><input type="number" value='3' max='5' min='1' class="fac-score"></td>
+							<td><span class="factor-name">Factor Score Weighted Average</span></td>
+							<td><div class="input-score fac-score" data-factor="fac-score">3</div></td>
 						</tr>
 						<tr>
 							<td>Cap / Notch</td>
 							<td><span class="icon"></span></td>
-							<td><span>Overrides</span></td>
-							<td><input type="text" value='a'></td>
+							<td><span class="factor-name">Overrides</span></td>
+							<td><div class="input-score fac-score" data-factor="fac-overrides">a</div></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="right-panel">
-				<div class="slider slider-horizontal" id="ex1Slider"><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 72%;"></div><div class="slider-track-high" style="right: 0px; width: 28%;"></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="-5" aria-valuemax="20" aria-valuenow="13" tabindex="0" style="left: 72%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="-5" aria-valuemax="20" aria-valuenow="-5" tabindex="0" style="left: 0%;"></div></div><div class="tooltip tooltip-main top" role="presentation" style="left: 72%; margin-left: -55px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">Current value: 13</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div></div>
+				<div class="slider slider-horizontal" id="ex1Slider"></div>
+				<div class="wrap-sliders">
+					<div class="slider slider-factors" id="economy"></div>
+					<div class="slider slider-factors" id="finman"></div>
+					<div class="slider slider-factors" id="budflex"></div>
+					<div class="slider slider-factors" id="budper"></div>
+					<div class="slider slider-factors" id="liq"></div>
+					<div class="slider slider-factors" id="debt"></div>
+					<div class="slider slider-factors" id="conlib"></div>
+					<div class="slider slider-factors" id="fac-score"></div>
+				</div>
 			</div>
 		</div>
+
 	</body>
 </html>
